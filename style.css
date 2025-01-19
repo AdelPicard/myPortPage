@@ -3,6 +3,18 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: "mFont";
+    src: url('./src/fonts/bold.ttf') format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "mFont";
+    src: url('./src/fonts/medium.ttf') format("truetype");
+    font-weight: normal;
+}
+
 /* Seção do Banner */
 #banner_section {
     display: flex;
@@ -45,6 +57,36 @@ body {
     border-radius: 16px;
 }
 
+#title_section {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    height: 40px;
+}
+
+#subtitle_section {
+    color: #8E8E8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "mFont";
+    font-weight: bold;
+    z-index: 999;
+}
+
+h2 {
+    font-size: 12px;
+    font-family: "mFont";
+    font-weight: normal;
+}
+
 
 @media (max-width: 1200px) {
     #banner {
@@ -72,4 +114,22 @@ body {
     #icon_section {
         margin-top: -120px;
     }
+
+    #title_section {
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    #subtitle_section {
+        padding-top: 15px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
 }
