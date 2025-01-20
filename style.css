@@ -15,6 +15,17 @@ body {
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "mFont";
+    src: url('./src/fonts/semibold.ttf') format("truetype");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "emoji";
+    src: url('./src/fonts/emoji.ttf') format("truetype");
+}
+
 /* Seção do Banner */
 #banner_section {
     display: flex;
@@ -87,6 +98,45 @@ h2 {
     font-weight: normal;
 }
 
+#social_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 0 10px;
+}
+
+#social_part {
+    gap: 0 20px;
+    display: flex;
+}
+
+.social_icon {
+    width: 18px;
+    height: 18px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+}
+
+#divider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.divider {
+    background-color: #383838;
+    height: 1px;
+    width: 500px;
+}
+
 
 @media (max-width: 1200px) {
     #banner {
@@ -132,4 +182,29 @@ h2 {
         font-size: 24px;
     }
 
+    .social_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    #social_section {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 0 30px;
+    }
+
+    #social_part {
+        gap: 0 70px;
+    }
+
+    .divider {
+        height: 2px;
+        width: 800px;
+    }
 }
